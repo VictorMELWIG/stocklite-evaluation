@@ -8,3 +8,9 @@ test('un produit sous son seuil déclenche une alerte', () => {
   s.ajouter('B2', 'Colle', 50, 5);
   assert.deepEqual(s.alertes().map((p) => p.ref), ['A1']);
 });
+
+test('un produit dont la quantité égale le seuil déclenche une alerte', () => {
+  const s = new Stock();
+  s.ajouter('X1', 'Pile', 5, 5);
+  assert.deepEqual(s.alertes().map((p) => p.ref), ['X1']);
+});
