@@ -3,7 +3,11 @@ import assert from 'node:assert/strict';
 import { formaterLigne } from '../src/format.js';
 
 test('formaterLigne', () => {
-  assert.equal(formaterLigne({ ref: 'A1', nom: 'Vis', quantite: 3, seuil: 1 }), 'A1 — Vis : 3');
+  assert.equal(formaterLigne({ ref: 'A1', nom: 'Vis', quantite: 3, seuil: 1 }), 'A1 — Vis : 3 u');
+});
+
+test('formaterLigne affiche l\'unité fournie', () => {
+  assert.equal(formaterLigne({ ref: 'A1', nom: 'Vis', quantite: 3, seuil: 1, unite: 'kg' }), 'A1 — Vis : 3 kg');
 });
 
 test('formaterLigne signale un produit en alerte', () => {
