@@ -2,5 +2,5 @@
 
 | Membre | Nom | Compte GitHub |
 |---|---|---|
-| 1 | Melwig | VICTORMELWIG  |
-| 2 | Fernandes| Hrefernandes  |
+| 1 | Melwig-Maes | VictorMELWIG |
+| 2 | Fernandez | Hrefernandes |
