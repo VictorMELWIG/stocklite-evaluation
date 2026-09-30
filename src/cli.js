@@ -10,6 +10,9 @@ switch (commande) {
   case 'lister':
     console.log(formaterTableau(stock.lister()));
     break;
+  case 'alertes':
+    console.log(formaterTableau(stock.alertes()) || 'Aucune alerte');
+    break;
   case 'export':
     console.log(versCsv(stock));
     break;
